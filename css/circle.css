@@ -1,0 +1,45 @@
+:root {
+  --radius: 60px; /* Радиус для текста */
+  --total-chars: 24; /* Общее количество символов (считаем все буквы и символы) */
+}
+
+.circle-container {
+  position: relative;
+  width: 150px; /* Контейнер для круга текста */
+  height: 150px;
+}
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px; /* Размер контейнера для текста */
+  height: 120px;
+  mix-blend-mode: multiply;
+}
+
+.circle-text span {
+  position: absolute;
+  font-size: 14px;
+  color: #E63D20;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transform-origin: 60px 60px; /* Центр вращения текста */
+  transform: rotate(calc(var(--n) * (360deg / var(--total-chars)))) translateX(var(--radius)); /* Равномерное распределение по кругу */
+}
+
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.center-logo img {
+  width: 40px;
+  height: 40px;
+}
