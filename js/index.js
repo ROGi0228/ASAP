@@ -224,10 +224,10 @@ window.addEventListener('scroll', function () {
 gsap.registerPlugin(ScrollTrigger);
 
 const backgrounds = [
-  'url(../img/directions-bg/directions-bg.png)',
-  'url(../img/directions-bg/blue.png)',
-  'url(../img/directions-bg/pink.png)',
-  'url(../img/directions-bg/yellow.png)'
+  'url(https://rogi0228.github.io/ASAP/img/directions-bg/directions-bg.png)',
+  'url(https://rogi0228.github.io/ASAP/img/directions-bg/blue.png)',
+  'url(https://rogi0228.github.io/ASAP/img/directions-bg/pink.png)',
+  'url(https://rogi0228.github.io/ASAP/img/directions-bg/yellow.png)'
 ];
 
 const directions = document.querySelector('.directions');
