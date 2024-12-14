@@ -96,7 +96,7 @@ let initialRotationX = Math.PI / 80;
 let initialRotationY = Math.PI / 5;
 
 const loader = new THREE.GLTFLoader();
-loader.load('.../img/ASAP_3D_LOGO.glb', function(gltf) {
+loader.load('../img/ASAP_3D_LOGO.glb', function(gltf) {
     model = gltf.scene;
     model.traverse(function(child) {
         if (child.isMesh) {
@@ -224,10 +224,10 @@ window.addEventListener('scroll', function () {
 gsap.registerPlugin(ScrollTrigger);
 
 const backgrounds = [
-  'url(.../img/directions-bg/directions-bg.png)',
-  'url(.../img/directions-bg/blue.png)',
-  'url(.../img/directions-bg/pink.png)',
-  'url(.../img/directions-bg/yellow.png)'
+  'url(../img/directions-bg/directions-bg.png)',
+  'url(../img/directions-bg/blue.png)',
+  'url(../img/directions-bg/pink.png)',
+  'url(../img/directions-bg/yellow.png)'
 ];
 
 const directions = document.querySelector('.directions');
