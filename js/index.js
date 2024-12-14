@@ -96,7 +96,7 @@ let initialRotationX = Math.PI / 80;
 let initialRotationY = Math.PI / 5;
 
 const loader = new THREE.GLTFLoader();
-loader.load('../img/ASAP_3D_LOGO.glb', function(gltf) {
+loader.load('../ASAP/img/ASAP_3D_LOGO.glb', function(gltf) {
     model = gltf.scene;
     model.traverse(function(child) {
         if (child.isMesh) {
