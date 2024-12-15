@@ -99,9 +99,7 @@
 }
 
 @media screen and (max-width: 859px) {
-	.clients_card{
-		margin: 0 auto;
-	}
+
 
 	.marketing__avatar img{
 		max-width: 350px;
@@ -362,6 +360,10 @@
 		font-size: 14px;
 	}
 
+	.clients_cards {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+	}
+
 }
 
 @media screen and (max-width: 375px) {
@@ -412,7 +414,6 @@
 	.showreel__img{
 		max-width: 230px;
 	}
-
 
 }
 
