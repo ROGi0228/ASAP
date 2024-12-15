@@ -393,7 +393,7 @@ main.active {
 	bottom: 50%;
 	align-items: center;
 	z-index: 10;
-	margin-right: 50px;
+	margin-right: 20px;
 }
 
 .stick {
@@ -469,7 +469,7 @@ main.active {
 
 .clients_cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 	gap: 16px;
 	width: 100%;
 }
@@ -478,8 +478,6 @@ main.active {
 	padding: 32px 0;
 	background-color: #1d1d1b;
 	border-radius: 11.1px;
-	max-width: 330px;
-	width: 100%;
 
 }
 .clients_card img {
