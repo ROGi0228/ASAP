@@ -154,6 +154,13 @@ function updateModelScale() {
 	}
 }
 
+function updateModelScale() {
+	if (window.innerWidth < 425) {
+		model && model.scale.set(0.6, 0.6, 0.6);
+		camera.position.set(-1, 1, 13);
+	}
+}
+
 window.addEventListener('resize', () => {
 	resizeRenderer();
 	updateModelScale();
